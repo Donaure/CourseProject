@@ -1,4 +1,4 @@
-This project contains my implement of LanguageModel, VAE, SED and ImageCaptioning.
+This project contains my implement of LanguageModel, VAE, SED and ImageCaption.
 
 Code and checkpoints can be found in corresponding directory.
 
