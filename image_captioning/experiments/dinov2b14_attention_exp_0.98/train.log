@@ -1,0 +1,86 @@
+[2024-05-01 04:16:05] Captioner(
+  (encoder): Encoder(
+    (adaptive_pool): AdaptiveAvgPool2d(output_size=(14, 14))
+  )
+  (decoder): DecoderWithAttention(
+    (attention): Attention(
+      (encoder_att): Linear(in_features=768, out_features=256, bias=True)
+      (decoder_att): Linear(in_features=256, out_features=256, bias=True)
+      (full_att): Linear(in_features=256, out_features=1, bias=True)
+      (relu): ReLU()
+      (softmax): Softmax(dim=1)
+    )
+    (embedding): Embedding(7708, 300)
+    (dropout): Dropout(p=0.5, inplace=False)
+    (decode_step): LSTMCell(1068, 256)
+    (init_h): Linear(in_features=768, out_features=256, bias=True)
+    (init_c): Linear(in_features=768, out_features=256, bias=True)
+    (f_beta): Linear(in_features=256, out_features=768, bias=True)
+    (sigmoid): Sigmoid()
+    (fc): Linear(in_features=256, out_features=7708, bias=True)
+  )
+)
+[2024-05-01 04:17:56] Epoch 1/45, train_loss: 4.002, val_bleu1: 0.559, val_bleu4: 0.114
+[2024-05-01 04:19:46] Epoch 2/45, train_loss: 3.333, val_bleu1: 0.604, val_bleu4: 0.149
+[2024-05-01 04:21:36] Epoch 3/45, train_loss: 3.141, val_bleu1: 0.575, val_bleu4: 0.153
+[2024-05-01 04:23:25] Epoch 4/45, train_loss: 3.008, val_bleu1: 0.640, val_bleu4: 0.195
+[2024-05-01 04:25:14] Epoch 5/45, train_loss: 2.955, val_bleu1: 0.499, val_bleu4: 0.136
+[2024-05-01 04:27:04] Epoch 6/45, train_loss: 2.868, val_bleu1: 0.660, val_bleu4: 0.201
+[2024-05-01 04:28:53] Epoch 7/45, train_loss: 2.857, val_bleu1: 0.544, val_bleu4: 0.151
+[2024-05-01 04:30:42] Epoch 8/45, train_loss: 2.820, val_bleu1: 0.571, val_bleu4: 0.162
+[2024-05-01 04:32:32] Epoch 9/45, train_loss: 2.800, val_bleu1: 0.587, val_bleu4: 0.173
+[2024-05-01 04:34:20] Epoch 10/45, train_loss: 2.775, val_bleu1: 0.640, val_bleu4: 0.198
+[2024-05-01 04:36:09] Epoch 11/45, train_loss: 2.755, val_bleu1: 0.654, val_bleu4: 0.199
+[2024-05-01 04:37:59] Epoch 12/45, train_loss: 2.774, val_bleu1: 0.658, val_bleu4: 0.204
+[2024-05-01 04:39:47] Epoch 13/45, train_loss: 2.774, val_bleu1: 0.638, val_bleu4: 0.189
+[2024-05-01 04:41:35] Epoch 14/45, train_loss: 2.768, val_bleu1: 0.645, val_bleu4: 0.198
+[2024-05-01 04:43:25] Epoch 15/45, train_loss: 2.747, val_bleu1: 0.674, val_bleu4: 0.207
+[2024-05-01 04:45:14] Epoch 16/45, train_loss: 2.778, val_bleu1: 0.676, val_bleu4: 0.210
+[2024-05-01 04:47:03] Epoch 17/45, train_loss: 2.753, val_bleu1: 0.621, val_bleu4: 0.178
+[2024-05-01 04:48:51] Epoch 18/45, train_loss: 2.786, val_bleu1: 0.673, val_bleu4: 0.210
+[2024-05-01 04:50:40] Epoch 19/45, train_loss: 2.816, val_bleu1: 0.693, val_bleu4: 0.218
+[2024-05-01 04:52:29] Epoch 20/45, train_loss: 2.802, val_bleu1: 0.697, val_bleu4: 0.218
+[2024-05-01 04:54:18] Epoch 21/45, train_loss: 2.812, val_bleu1: 0.701, val_bleu4: 0.223
+[2024-05-01 04:56:07] Epoch 22/45, train_loss: 2.767, val_bleu1: 0.695, val_bleu4: 0.215
+[2024-05-01 04:57:56] Epoch 23/45, train_loss: 2.811, val_bleu1: 0.695, val_bleu4: 0.215
+[2024-05-01 04:59:45] Epoch 24/45, train_loss: 2.769, val_bleu1: 0.691, val_bleu4: 0.212
+[2024-05-01 05:01:34] Epoch 25/45, train_loss: 2.831, val_bleu1: 0.694, val_bleu4: 0.220
+[2024-05-01 05:03:23] Epoch 26/45, train_loss: 2.842, val_bleu1: 0.700, val_bleu4: 0.215
+[2024-05-01 05:05:12] Epoch 27/45, train_loss: 2.823, val_bleu1: 0.691, val_bleu4: 0.200
+[2024-05-01 05:07:00] Epoch 28/45, train_loss: 2.855, val_bleu1: 0.701, val_bleu4: 0.208
+[2024-05-01 05:08:49] Epoch 29/45, train_loss: 2.839, val_bleu1: 0.702, val_bleu4: 0.209
+[2024-05-01 05:10:38] Epoch 30/45, train_loss: 2.889, val_bleu1: 0.700, val_bleu4: 0.212
+[2024-05-01 05:12:27] Epoch 31/45, train_loss: 2.917, val_bleu1: 0.708, val_bleu4: 0.211
+[2024-05-01 05:14:16] Epoch 32/45, train_loss: 2.882, val_bleu1: 0.700, val_bleu4: 0.218
+[2024-05-01 05:16:05] Epoch 33/45, train_loss: 2.912, val_bleu1: 0.710, val_bleu4: 0.216
+[2024-05-01 05:17:54] Epoch 34/45, train_loss: 2.907, val_bleu1: 0.701, val_bleu4: 0.206
+[2024-05-01 05:19:42] Epoch 35/45, train_loss: 2.928, val_bleu1: 0.711, val_bleu4: 0.204
+[2024-05-01 05:21:31] Epoch 36/45, train_loss: 2.921, val_bleu1: 0.713, val_bleu4: 0.218
+[2024-05-01 05:23:20] Epoch 37/45, train_loss: 2.923, val_bleu1: 0.699, val_bleu4: 0.211
+[2024-05-01 05:25:09] Epoch 38/45, train_loss: 2.980, val_bleu1: 0.717, val_bleu4: 0.208
+[2024-05-01 05:26:58] Epoch 39/45, train_loss: 2.964, val_bleu1: 0.688, val_bleu4: 0.196
+[2024-05-01 05:28:47] Epoch 40/45, train_loss: 2.978, val_bleu1: 0.714, val_bleu4: 0.212
+[2024-05-01 05:30:35] Epoch 41/45, train_loss: 2.955, val_bleu1: 0.701, val_bleu4: 0.208
+[2024-05-01 05:32:23] Epoch 42/45, train_loss: 2.983, val_bleu1: 0.696, val_bleu4: 0.195
+[2024-05-01 05:34:12] Epoch 43/45, train_loss: 3.024, val_bleu1: 0.684, val_bleu4: 0.184
+[2024-05-01 05:36:02] Epoch 44/45, train_loss: 2.970, val_bleu1: 0.719, val_bleu4: 0.219
+[2024-05-01 05:37:50] Epoch 45/45, train_loss: 3.045, val_bleu1: 0.712, val_bleu4: 0.204
+[2024-05-01 05:38:48] evaluation of the best validation performance model: 
+[2024-05-01 05:38:48] train
+[2024-05-01 05:38:48] Bleu-1: 0.748
+[2024-05-01 05:38:48] Bleu-2: 0.555
+[2024-05-01 05:38:48] Bleu-3: 0.407
+[2024-05-01 05:38:48] Bleu-4: 0.296
+[2024-05-01 05:38:48] 
+[2024-05-01 05:38:48] val
+[2024-05-01 05:38:48] Bleu-1: 0.701
+[2024-05-01 05:38:48] Bleu-2: 0.487
+[2024-05-01 05:38:48] Bleu-3: 0.332
+[2024-05-01 05:38:48] Bleu-4: 0.223
+[2024-05-01 05:38:48] 
+[2024-05-01 05:38:48] test
+[2024-05-01 05:38:48] Bleu-1: 0.690
+[2024-05-01 05:38:48] Bleu-2: 0.473
+[2024-05-01 05:38:48] Bleu-3: 0.320
+[2024-05-01 05:38:48] Bleu-4: 0.216
+[2024-05-01 05:38:48] 

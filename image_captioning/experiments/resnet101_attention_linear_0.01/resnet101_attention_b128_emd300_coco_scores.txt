@@ -1,0 +1,9 @@
+Bleu-1: 0.595
+Bleu-2: 0.408
+Bleu-3: 0.271
+Bleu-4: 0.177
+Rouge: 0.410
+METEOR: 0.188
+CIDEr: 0.489
+SPICE: 0.136
+SPIDEr: 0.312
