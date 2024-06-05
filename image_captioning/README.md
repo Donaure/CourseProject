@@ -1,4 +1,4 @@
-To produce the best result.
+To produce the best result. You can run
 
 ```bash
 bash run.sh
