@@ -1,7 +1,7 @@
-To produce the best result. You can run
+To produce the best result. You can run Distilled-GPT2 by 
 
 ```bash
-bash run.sh
+python distilgpt2.py
 ```
 Before that you need to modify `outputpath` in `configs/dinov2b14_attention.yaml` and
 
