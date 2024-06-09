@@ -1,4 +1,4 @@
-Relevant experimental results can be found in the `exp` directory.
+Relevant experimental results can be found in the `exp` directory. I did not include all the results, but only the important ones.
 
 To produce the best result. You can run Distilled-GPT2 by 
 
