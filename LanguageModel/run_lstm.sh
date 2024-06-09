@@ -1,0 +1,1 @@
+python main.py --data data/gigaspeech --cuda --model LSTM --epochs 30 --nlayers 2 --emsize 1000 --nhid 1000 --lr 20 --batch_size 20
