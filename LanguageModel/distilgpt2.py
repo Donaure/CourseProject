@@ -8,7 +8,7 @@ giga = load_dataset('text', data_files={'train':'data/gigaspeech/train.txt',
                                         'test': 'data/gigaspeech/test.txt'})
 
 
-tokenizer = AutoTokenizer.from_pretrained("/root/autodl-tmp/distilgpt2")
+tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
 tokenizer.pad_token = tokenizer.eos_token
 
 
@@ -46,7 +46,7 @@ lm_dataset = tokenized_giga.map(group_texts, batched=True, num_proc=4)
 
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False,)
 
-model = AutoModelForCausalLM.from_pretrained("/root/autodl-tmp/distilgpt2")
+model = AutoModelForCausalLM.from_pretrained("distilgpt2")
 
 training_args = TrainingArguments(
     output_dir="exp/distilgpt2",
