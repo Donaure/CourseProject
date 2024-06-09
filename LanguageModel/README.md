@@ -4,6 +4,10 @@ To produce the best result. You can run Distilled-GPT2 by
 python distilgpt2.py
 ```
 If you can't connect to HuggingFace, you can download the model locally, and `from_pretrained('path/to/your/model')`
-Before that you need to modify `outputpath` in `configs/dinov2b14_attention.yaml` and
 
-Download the pt files in this [link](https://jbox.sjtu.edu.cn/l/31i0MS) and put them under `experiments/dinov2b14_attention_sigmoid_15` directory.
+Besides Distilled-GPT2, you can get the second best result by
+
+```bash
+bash run_lstm.sh
+```
+Note that the the parameter size may slightly exceed 60M, you can modify emsize and nhid to 800 if you want to strictly limit the parameters within 60M.
